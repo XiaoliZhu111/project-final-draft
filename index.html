@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to the favicon image -->
+    <link rel="icon" href="images/favicon.jpg">
+	<!-- Link to the reset file -->
+	<link rel="stylesheet" href="css/html5reset.css">
+    <!-- Link to the stylesheet -->
+	<link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&family=Space+Mono&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/98eedc2f4a.js" crossorigin="anonymous"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BN99YHHEJL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-BN99YHHEJL');
+</script>
+    <title>Restaurants in Shanghai</title>
+</head>
+
+<body>
+    <!--Skip to Main Content -->
+	<a class = "skip" href="#main">Skip to Main Content</a>
+
+    <header id = 'index'>
+        <!--<img src ="images/shanghai.jpg" alt = "a view of Shanghai" width = "200" />-->
+        <h1 id = "main">Restaurants in Shanghai</h1>
+        <nav>
+            <ul>
+                <li class="active"><a href = "index.html" >Home</a></li>
+				<li><a href = "local.html">Chinese Restaurants</a></li>
+                <li><a href = "bistro.html" >Bistro And Bar</a></li>
+				<li><a href = "brunch.html">Brunch</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+
+    <main class = "index">
+        <div id = 'index_container'>
+        <p> 
+            Shanghai is an international city with not only Chinese food but food from all other countries as well. Without
+            going abroad, people in Shanghai can taste almost all food they want from different countries in the world. As a
+            Chinese who grew up in Shanghai, I am going to introduce you some of good restaurants, including Shnaghainese food
+            restaurants and western food restaurants.
+            <br><br>All of restaurants that I picked for you features fancy environment, best service, and scrumptious food. You can
+            find Italian restaurants with magnificent interior design and authentic Italian cuisine, which makes you feel like you
+            are really in Italia. There are also some brunch restaurants for people who prefer to eat in the late morning. Last
+            but not least, some Chinese restaurants that features traditional Chinese food are also included. For example, Jia
+            Jia Tangbao and Yi Pin Ju are two highly rated restaurants in Shangahi. If you are interested in Chinese food or you
+            are looking for good places for brunch and bars, just take a look at my website!
+        </p>
+        <div class = "shanghai-img">
+            <img src="images/vue-at-hyatt-on-the-bund2.jpg" alt="inside view of a brunch restaurant" width="200" />
+        </div>
+        </div>
+        <hr>
+        <h2>
+            Restaurants Gallery
+        </h2>
+        <hr>
+        <h3>Click on pictures to see more info!</h3>
+        <div class="all">
+            <div>
+                <h3>Jia Jia Tangbao</h3>
+                <a href="local.html">
+                <img src="images/jia-jia-tangbao.jpg" alt="soup dumplings" width="200" />
+                </a>
+            </div>
+            <div>
+                <h3>Yi Pin Ju</h3>
+                <a href="local.html">
+                <img src="images/yi-pin-ju.jpg" alt="hot pot" width="200" />
+            </a>
+            </div>
+            <div>
+                <h3>Sanlin Benbang Guan</h3>
+                <a href="local.html">
+                <img src="images/sanlin-benbang-guan2.jpg" alt="a dish of the local restaurant" width="200" />
+            </a>
+            </div>
+            <div>
+                <h3>Blaz</h3>
+                <a href="bistro.html">
+                <img src="images/blaz2.jpg" alt="some specialities of the restaurant called Blaz" width="200" />
+            </a>
+            </div>
+            <div>
+                <h3>Cellar To Table</h3>
+                <a href="bistro.html">
+                <img src="images/cellar-to-table2.jpg" alt="some specialities of the bistro" width="200" />
+            </a>
+            </div>
+            <div>
+                <h3>Cantina Agave</h3>
+                <a href = "brunch.html">
+                <img src="images/cantina-agave.jpg" alt="a cocktail" width="200" />
+            </a>
+            </div>
+            <div>
+                <h3>Senso</h3>
+                <a href = "brunch.html">
+                <img src="images/senso.jpg" alt="cocktails" width="200" />
+            </a>
+            </div>
+            <div>
+                <h3>Vue</h3>
+                <a href = "brunch.html">
+                <img src="images/vue-at-hyatt-on-the-bund.jpg" alt="champagne" width="200" />
+            </a>
+            </div>
+            <div>
+                <h3>Zeitgeist</h3>
+                <a href = "brunch.html">
+                <img src="images/zeitgeist.jpg" alt="cocktails" width="200" />
+            </a>
+            </div>
+            
+           
+        </div>
+        <hr>
+        <div class = 'a-container'>
+            <form action="https://formspree.io/f/xayvdnpz" method="POST">
+                <fieldset>
+                  <legend>Contact Form</legend>
+                  <label for="name_id">Your Name</label>
+                  <input type="text" name ="name" placeholder="Enter Your Name" id="name_id">
+              
+                  <label for="email_id">Your Email</label> 
+                  <input type="email" name="email" id="email_id">
+            
+                  <label for="phone_id">Your Phone Number</label>
+                  <input type="tel" name="phone" id="phone_id">
+    
+                  <label for="food_id">Your Favorite Food</label>
+                  <input type="text" list="food" id="food_id" name="city">
+                  <datalist name ="food" id="food">
+                    <option value="Chinese Food">Chinese Food</option>
+                    <option value="Italian Food">Italian Food</option>
+                    <option value="Fast Food">Fast Food</option>
+                    <option value="French Food">French Food</option>
+                    <option value="Korean Food">Korean Food</option>
+                    <option value="Japanese Food">Japanese Food</option>
+                  </datalist>
+    
+                  
+              
+                  <label for="message_id">Leave A Message</label>
+                  <textarea name="Message" id="message_id"></textarea>
+              
+                  <input type="checkbox" name="remember" id="remember_id"> 
+                  <label for="remember_id">Remember me</label>
+                
+                  
+                  <input type="submit" value="Submit">
+                </fieldset>
+            </form>
+        
+           <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="images/vue-at-hyatt-on-the-bund2.jpg" alt="inside view of a brunch restaurant" width="200" />
+              </div>
+              <div class="flip-card-back">
+                <h2>Welcome to Shanghai Restaurants</h2>
+                
+              </div>
+            </div>
+        </div>
+        
+        </div>
+
+
+
+    
+    </main>
+    <footer>
+        <p>Xiaoli Zhu &copy; 2022 <i class="fa-regular fa-heart" aria-label="heart icon" role="img"></i></p>
+        
+        
+    </footer>
+
+</body>
+
+
+</html>

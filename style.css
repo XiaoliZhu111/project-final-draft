@@ -1,0 +1,466 @@
+body {
+    background-color: #251e25;
+}
+main{
+    margin:20px;
+}
+h1{
+    padding-top: 80px;
+    padding-left: 30px;
+    font-size: 50px;
+    font-family: 'Merriweather', serif;
+    margin: 12px;
+    color: white;
+    animation-name: logo;
+    animation-duration: 5s;
+}
+@keyframes logo{
+    from{font-size: 25px; opacity: 0; }
+    to{font-size: 50px; opacity: 1;}
+}
+footer{
+    background-color: #d89055;
+    padding: 30px 8px;
+    
+}
+h3{
+    color: white;
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    align-content:center;
+    flex-wrap: nowrap;
+    margin: 20px;
+}
+nav li{
+    margin: 12px;
+    background-color: #f0b46b; /* rgb(235, 164, 208)*/
+    padding: 12px;
+    /* width: 25%; */
+    font-size: 18px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* display: inline-block; */
+    /* width: 20%; */
+}
+
+p{
+    color:white;
+    margin: 12px;
+    line-height: 36px;
+    font-size: 15px;
+    font-family: 'Merriweather', serif;
+}
+footer p{
+    color:black;
+    text-align: center;
+}
+h2{
+    color:white;
+}
+.active{
+    background-color: #bd6648; /*rgb(179, 229, 245)*/
+    font-weight: bold;
+    border: 2px solid black; 
+}
+a:link{
+    color:black;
+    text-decoration: none;
+}
+a:visited{color:black}
+.skip:link{color:white}
+.skip:visited{color:white}
+img{
+    margin: 10px;
+    padding: 12px;
+    width: 270px;
+    height: 250px;
+}
+
+img:hover{
+    transform: scale(1.1);
+    border: none; 
+ } 
+ 
+ #index{
+    background-color: black;
+    background-image: url('../images/shanghai.jpg');
+    max-height: 530px;
+    min-width: 300px;
+ }
+ #brunch{
+    background-image: url('../images/brunch-3.jpeg');
+    background-color: black;
+    max-height: 530px;
+    min-width: 300px;
+ }
+ #local{
+    background-image: url('../images/chinese-food-2.jpeg');
+    background-color: black;
+    max-height: 530px;
+    min-width: 300px;
+ }
+ #bistro{
+    background-image: url('../images/bistro-3.jpeg');
+    background-color: black;
+    max-height: 530px;
+    min-width: 300px;
+ }
+ 
+ a.skip{
+    padding: 6px;
+     z-index: 1;
+     -webkit-transition: top 1s ease-out;
+     transition: left 1s ease-out;
+     position: absolute;
+     left: -500px;
+ }
+ a.skip:focus{
+    position: relative;
+    top: 20px;
+    left: 0;
+  }
+
+ /*homepage */
+ .index h2{
+     text-align: center;
+     font-size: 25px;
+     font-weight: bolder;
+     color: #f0b46b;
+ }
+ .index h3{
+     color: wheat;
+     text-align: center;
+
+ }
+ .index h3{
+     font-size: larger;
+ }
+ .all{
+     display: flex;
+     justify-content: center;
+     flex-wrap: wrap;
+ }
+ .all div{
+    align-items: center;
+    color: white;
+    text-align: center;
+    margin: 10px;
+    height: 320px;
+    width: 320px;
+    border: 4px solid gray;
+    border-radius: 10px;
+ }
+ #index_container{
+     /* display: flex;
+     justify-content:space-around;
+     flex-wrap: wrap; */
+     border: 4px solid gray;
+     border-radius: 10px;
+     margin-bottom: 30px;
+ }
+ .shanghai-img{
+    background-color: #251e25;
+    background-image: url(../images/vue-at-hyatt-on-the-bund2.jpg);
+    min-height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 30px;
+ }
+ .shanghai-img img{
+     display: none;
+ }
+ .a-container{
+     display: flex;
+     justify-content: space-around;
+     flex-wrap: wrap;
+
+ }
+
+ .flip-card img{
+    padding: 0;
+    margin: 0;
+}
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+   background-color: transparent;
+   width: 270px;
+   height: 250px;
+   /* border: 1px solid #f1f1f1; */
+   perspective: 1000px; /*Remove this if you don't want the 3D effect */
+   align-self: center;
+ }
+ 
+ /* This container is needed to position the front and back side */
+ .flip-card-inner {
+   position: relative;
+   width: 100%;
+   height: 100%;
+   text-align: center;
+   transition: transform 0.8s;
+   transform-style: preserve-3d;
+ }
+ 
+ /* Do an horizontal flip when you move the mouse over the flip box container */
+ .flip-card:hover .flip-card-inner, .flip-card:active .flip-card-inner, .flip-card:focus .flip-card-inner{
+   transform: rotateY(180deg);
+ }
+ 
+ /* Position the front and back side */
+ .flip-card-front, .flip-card-back {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   -webkit-backface-visibility: hidden; /* Safari */
+   backface-visibility: hidden;
+   
+ }
+ 
+ /* Style the front side (fallback if image is missing) */
+ .flip-card-front {
+   background-color: #bbb;
+   color: black;
+ }
+ 
+ /* Style the back side */
+ .flip-card-back {
+   background-color: #724b3c;
+   color: white;
+   transform: rotateY(180deg);
+ }
+ .flip-card.focus-within .flip-card-inner{
+    transform: rotateY(180deg);
+}
+ .flip-card-back h2{
+     color: white;
+     padding:20px;
+     margin-top: 30px;
+     line-height: 1.5;
+ }
+
+ 
+ 
+ /*local page*/
+ #local-main, .bistro{
+    display: grid;
+    grid-template-columns: 1fr;
+    
+ }
+ .local-imgs, .bistro-imgs, .brunch-img1, .brunch-img2{
+    grid-column: 1;
+    grid-row: auto;
+    justify-self: center;
+    height: 340px;
+    width: 360px;
+    border: 5px dotted #724b3c;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+ }
+ #local-main p, .bistro p{
+     grid-column: 1;
+     grid-row: auto;
+     justify-self: center;
+     max-height: 200px;
+     font-size: 14px;
+     line-height: 1.5;
+     
+ } 
+ #local-main h2, .bistro h2{
+     text-align: center;
+    grid-column: 1;
+    grid-row: auto;
+    justify-self: center;
+     font-size: 22px;
+     color: #d89055;
+     text-transform: capitalize;
+     font-weight: bold;
+ }
+ 
+ .brunch h2{
+     text-align: center;
+     font-weight: bold;
+     color: #d89055;
+     font-size: 22px;
+ }
+ .brunch{
+     display: flex;
+     flex-direction: column;
+     align-items:center;
+     
+ }
+
+ 
+ 
+ @media screen and (prefers-reduced-motion: reduce){
+     h1{
+         animation: none;
+     }
+     .flip-card-inner {
+         transition: none;
+     }
+     .shanghai-img{
+        background-attachment: initial;
+     }
+
+ }
+
+ input{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+ }
+ legend{
+     text-align: center;
+     font-size: 20px;
+     font-weight: bold;
+ }
+ form{
+     background-color: #724b3c;
+     margin: 30px;
+     padding: 20px;
+     color: white;
+     max-width: 600px;
+ }
+ textarea{
+    width: 100%;
+    height: 35vh;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  input[type=checkbox]{
+    display:inline;
+    width:inherit;
+}
+input[type=submit] {
+    background-color: #38803C;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  input[type=submit]:hover {
+    opacity: 0.8;
+  }
+@media screen and (min-width:720px){
+    ul{
+        display: flex;
+        flex-direction: column;
+        align-content:center;
+        flex-wrap: nowrap;
+    }
+    .local-imgs, .bistro-imgs{
+        width: 700px;
+     }
+    .brunch-img1, .brunch-img2{
+        width: 620px;
+    }
+    .brunch h3 {
+        opacity: 0;
+    }
+    
+}
+@media screen and (min-width:1000px){
+    nav{
+        padding-top: 200px;
+     }
+    ul{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-around;
+        flex-wrap: nowrap;
+    
+    }
+    nav li{
+        display: inline-block;
+        width: 25%;
+    }
+    .local-imgs{
+        width: 950px;
+     }
+     .bistro{
+         grid-template-columns: 1fr 1fr;
+         grid-template-rows: 10px 1fr 10px 1fr;
+         row-gap: 20px;
+     }
+     .bistro-imgs{
+        width: 650px;
+        height: 650px;
+         display: inline-flex;
+         justify-content: space-around;
+         flex-wrap: wrap;
+         grid-column: 1;
+         grid-row: auto;
+         overflow-x: hidden;
+
+     }
+     .bistro p{
+         grid-column:2;
+         grid-row: auto;
+         line-height: 2;
+         width: 500px;
+         font-size: 22px;
+        
+     }
+     .brunch{
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+         grid-template-rows: 1fr 1fr 1fr 1fr;
+         
+     }
+     .brunch-img1{
+         display:inline-flex;
+         flex-direction: column;
+         width: 320px;
+         height: 550px;
+         overflow-x: hidden;
+         grid-column: 1;
+         grid-row: auto;
+     }
+     .brunch-img2{
+        display:inline-flex;
+        flex-direction: column;
+        width: 320px;
+         height: 550px;
+        overflow-x: hidden;
+         grid-column: 2;
+         grid-row: auto;
+     }
+     .brunch p:nth-of-type(1){
+         grid-column:2;
+         grid-row:auto;
+         padding-right: 30px;
+     }
+     .brunch p:nth-of-type(2){
+         grid-column:1;
+         grid-row:2;
+     }
+     .brunch p:nth-of-type(4){
+        grid-column:1;
+        grid-row:4;
+    }
+    #local-main p{
+        width: 950px;
+    }
+   .brunch h3, #local-main h3, .bistro h3{
+       opacity: 0;
+   }
+
+     
+}
+
+
+ 
